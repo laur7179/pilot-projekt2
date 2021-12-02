@@ -1,0 +1,128 @@
+img {
+  max-width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(236, 218, 218);
+}
+
+/* Links står på række */
+.links {
+  display: inline;
+  gap: 3%;
+  display: flex;
+  flex-flow: wrap;
+  list-style: none;
+  padding-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(39, 69, 81);
+  font-size: 1.5rem;
+}
+
+a:hover {
+  color: rgb(39, 69, 81);
+  color: #e27e77;
+}
+
+/* baggrundsbillede */
+#section1 {
+  background-image: url(killing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% 60%;
+  width: 100%;
+  height: 60vh;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#storh1 {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  padding-left: 1rem;
+  letter-spacing: 0.1rem;
+  padding-top: 125pt;
+}
+
+#lilleh1 {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  padding-left: 1rem;
+  letter-spacing: 0.1rem;
+  /* padding: 30pt; */
+}
+
+#section2 {
+  display: block;
+  text-align: left;
+  max-width: 60%;
+  margin-left: -0.2vh;
+  line-height: 2rem;
+}
+
+#section3 {
+  gap: 1rem;
+  padding-top: 4rem;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(39, 69, 81);
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(39, 69, 81);
+  /* background-color: rgb(245, 200, 170); */
+}
+
+/* gør at video er responsiv */
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+#billeder {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  display: flex;
+  object-fit: cover;
+}
+
+.galleri {
+  padding-top: 1rem;
+}
+
+.højkatt {
+  padding-top: 1rem;
+}
+
+#layoutdiagram {
+  padding-top: 1rem;
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding: 5%;
+  }
+}
